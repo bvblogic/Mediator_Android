@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.uprayzner.mediator.views.VideoView
+            android:id="@+id/vv_intro"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/video_container_height"
+            android:layout_gravity="center"
+            tools:context=".activities.ContentActivity" />
+
+        <LinearLayout
+            android:id="@+id/ll_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/video_container_shadow_margin_top_height"
+            android:background="@android:color/white"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+</RelativeLayout>

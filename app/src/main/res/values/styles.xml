@@ -1,0 +1,139 @@
+<resources>
+    <!--    ╔════╦════════════════════════════╦═════════════════════════════╗
+            ║    ║ FONT FAMILY                ║ TTF FILE                    ║
+            ╠════╬════════════════════════════╬═════════════════════════════╣
+            ║  1 ║ casual                     ║ ComingSoon.ttf              ║
+            ║  2 ║ cursive                    ║ DancingScript-Regular.ttf   ║
+            ║  3 ║ monospace                  ║ DroidSansMono.ttf           ║
+            ║  4 ║ sans-serif                 ║ Roboto-Regular.ttf          ║
+            ║  5 ║ sans-serif-black           ║ Roboto-Black.ttf            ║
+            ║  6 ║ sans-serif-condensed       ║ RobotoCondensed-Regular.ttf ║
+            ║  7 ║ sans-serif-condensed-light ║ RobotoCondensed-Light.ttf   ║
+            ║  8 ║ sans-serif-light           ║ Roboto-Light.ttf            ║
+            ║  9 ║ sans-serif-medium          ║ Roboto-Medium.ttf           ║
+            ║ 10 ║ sans-serif-smallcaps       ║ CarroisGothicSC-Regular.ttf ║
+            ║ 11 ║ sans-serif-thin            ║ Roboto-Thin.ttf             ║
+            ║ 12 ║ serif                      ║ NotoSerif-Regular.ttf       ║
+            ║ 13 ║ serif-monospace            ║ CutiveMono.ttf              ║
+            ╚════╩════════════════════════════╩═════════════════════════════╝-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorGreenDark</item>
+        <item name="colorAccent">@color/cardContentTextColorWhite</item>
+        <item name="colorControlNormal">@color/cardContentTextColorWhite</item>
+        <item name="android:textColorPrimary">@color/cardContentTextColorWhite</item>
+        <item name="android:colorControlHighlight">@color/cardContentTextColorBlueLight</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.SplashActivity" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.EventActivity" parent="AppTheme">
+        <item name="colorPrimary">@color/cardContentTextColorDarkBlue</item>
+        <item name="colorPrimaryDark">@color/cardHeaderTextColorBlue</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.StandsActivity" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.ScheduleFragment" parent="AppTheme">
+        <item name="colorPrimary">@color/colorGreen</item>
+    </style>
+
+    <style name="AppTheme.InfoFragment" parent="AppTheme">
+        <item name="colorPrimary">@color/colorRed</item>
+    </style>
+
+    <style name="AppTheme.VideoActivity" parent="AppTheme">
+        <item name="colorPrimary">@color/cardContentTextColorWhite</item>
+        <item name="colorPrimaryDark">@color/cardContentTextColorWhite</item>
+        <item name="android:textColorPrimary">@color/cardContentTextColorWhite</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="AppTheme.TabsDark">
+        <item name="android:textColorPrimary">@color/tabTitleTextColorActive</item>
+        <item name="android:textColorSecondary">@color/tabTitleTextColorNormal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.ToolBarTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/cardContentTextColorWhite</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="AppTheme.ListHeaderTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/listHeaderTextColorWhite</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+    <style name="AppTheme.ListItemTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/listHeaderTextColorWhite</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.ListItemSubTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/cardContentTextColorWhite</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.LightTextTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+    <style name="AppTheme.DarkBlueBoldTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/cardContentTextColorDarkBlue</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.BlueTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/cardContentTextColorBlueLight</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.LightBlueTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/cardHeaderTextColorBlue</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.DarkListTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="AppTheme.DarkHeaderTitle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/stand_title_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.DarkContent">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/stand_content_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

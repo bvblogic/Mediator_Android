@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mediator</string>
+
+    <string name="tab_title">News</string>
+    <string name="tab_plan_title">Map</string>
+    <string name="tab_info_title">About</string>
+
+
+    <!--LobbyFragment-->
+    <string name="event_date_format">с %1$s\nпо %2$s</string>
+
+
+    <!--Info-->
+    <string name="fragment_info_title">About</string>
+</resources>

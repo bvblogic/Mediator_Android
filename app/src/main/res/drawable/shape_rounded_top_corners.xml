@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/cardContentTextColorWhite" />
+    <corners
+        android:topLeftRadius="@dimen/stand_card_corners_top_radius"
+        android:topRightRadius="@dimen/stand_card_corners_top_radius" />
+    <padding
+        android:bottom="0dip"
+        android:left="0dip"
+        android:right="0dip"
+        android:top="0dip" />
+</shape>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style type="text/css">
+            html {
+                font-size: 14px;
+            }
+
+            body {
+                background: url(http://starcon.pro/wp-content/themes/starcon2015/img/app-bg.jpg) no-repeat center center fixed;
+                background-size: cover;
+                font-family: Roboto;
+                padding: 1rem;
+                line-height:1.3em;
+                color: white;
+            }
+
+            a,
+            a:visited,
+            a:active {
+                color: rgba(255,255,255,.7);
+            }
+
+            h1 {
+                font-weight: 200;
+                color: rgba(255,255,255,.75);
+                font-size: 1.7rem;
+                line-height: 1em;
+                text-align: center;
+                margin: .5em 1em 1em;
+            }
+
+            img {
+             width: 100%;
+             height: auto;
+                },
+            iframe {
+                display: block;
+                margin: .5em auto;
+            }
+        </style>
+    </head>
+    <body>
+         *HTML_BODY*
+    </body>
+</html>

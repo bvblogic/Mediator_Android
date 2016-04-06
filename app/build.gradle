@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.uprayzner.mediator"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/activities',
+                            'src/main/res/layouts/dialogs',
+                            'src/main/res/layouts/fragments',
+                            'src/main/res/layouts/simple',
+                            'src/main/res/layouts/views',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+            resources.srcDirs =
+                    [
+                            'src/main/resources',
+                            'src/main/res/layouts',
+                            'src/main/res/layouts/fragments',
+                            'src/main/res/layouts/activities',
+                            'src/main/res/layouts/simple',
+                            'src/main/res/layouts/dialogs',
+                            'src/main/res/layouts/views'
+                    ]
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.karumi:dexter:2.2.2'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3'
+    compile 'com.sprylab.android.texturevideoview:texturevideoview:1.1.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.qozix:tileview:2.1.4'
+    compile 'com.github.nirhart:parallaxscroll:1.0'
+    compile 'com.aurelhubert:ahbottomnavigation:1.1.8'
+    compile 'org.adw.library:discrete-seekbar:1.0.1'
+    compile 'com.thefinestartist:ytpa:1.2.1'
+    compile 'com.android.support:palette-v7:23.1.1'
+    compile project(':datacontroler')
+    compile project(':megatools')
+    compile project(':pagertab')
+}

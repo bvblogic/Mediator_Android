@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <include
+        android:id="@+id/toolbar_container"
+        layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_bg_color">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/psts_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tabs_height"
+                app:pstsDividerColor="@android:color/transparent"
+                app:pstsIndicatorColor="@android:color/transparent"
+                app:pstsIndicatorHeight="0dp"
+                app:pstsShouldExpand="false"
+                app:pstsTabBackground="@drawable/tabs_selector"
+                app:pstsUnderLine="true"
+                app:pstsUnderlineColor="@android:color/transparent"
+                app:theme="@style/AppTheme.TabsDark" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/nhsr_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/footer_height">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
